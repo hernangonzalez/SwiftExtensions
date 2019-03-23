@@ -15,7 +15,7 @@ public extension UIView {
     /**
         A convenience function to configure a default drop shadow effect.
      */
-    @objc open func configureShadow() {
+    @objc func configureShadow() {
         let layer = self.layer
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
