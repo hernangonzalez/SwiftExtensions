@@ -12,7 +12,8 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ReactiveCocoa/ReactiveSwift.git", from: "5.0.0"),
-        .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "6.1.0")
+        .package(url: "https://github.com/DaveWoodCom/XCGLogger.git", from: "6.1.0"),
+        .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0")
     ],
     targets: [
         .target(
@@ -20,6 +21,6 @@ let package = Package(
             dependencies: ["XCGLogger"]),
         .target(
             name: "SwiftExtensions",
-            dependencies: ["ReactiveSwift", "Logger"])
+            dependencies: ["ReactiveSwift", "Logger", "Alamofire"])
     ]
 )

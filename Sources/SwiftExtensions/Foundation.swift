@@ -105,7 +105,7 @@ public extension Array where Element: Comparable {
     /// - Parameter maxPartitions: The maximum number of slices
     ///
     /// - Returns: An array of array slices
-    public func sliced(where predicate: (_ element: Element, _ nextElement: Element) -> Bool, maxPartitions: Int = .max ) -> [ArraySlice<Element>] {
+    func sliced(where predicate: (_ element: Element, _ nextElement: Element) -> Bool, maxPartitions: Int = .max ) -> [ArraySlice<Element>] {
         return self[startIndex ..< endIndex].sliced(where: predicate, maxPartitions: maxPartitions)
     }
 }
