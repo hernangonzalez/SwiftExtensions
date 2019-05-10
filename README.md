@@ -1,3 +1,2 @@
 # SwiftExtensions
-
-A description of this package.
+Friendly extensions that end-up creating on every project.
